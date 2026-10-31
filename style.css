@@ -1,0 +1,467 @@
+/* Phold — phold.photo. SF Pro Rounded, the app's own type (Apple's system rounded face, so nothing to download),
+   on a warm dark brown ground, cream type, film-edge orange. */
+
+
+:root {
+  --ground: #261a12;
+  --ground-2: #312218;
+  --ground-3: #3d2b1e;
+  --cream: #f3ead9;
+  --cream-dim: #d8cbb5;     /* 10.9:1 on --ground */
+  --muted: #b9a88f;         /* 7.4:1 on --ground */
+  --film: #f2a03d;          /* film-edge orange, 8.3:1 on --ground */
+  --film-deep: #c9761f;
+  --line: rgba(243, 234, 217, 0.14);
+  --glass: rgba(255, 255, 255, 0.09);
+  --glass-edge: rgba(255, 255, 255, 0.22);
+  --radius: 14px;
+  --wrap: 1120px;
+  --gutter: 16px;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  background-image: radial-gradient(ellipse 120% 60% at 50% 0%, #3a2819 0%, var(--ground) 70%);
+  background-repeat: no-repeat;
+  color: var(--cream);
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+@media (min-width: 720px) { body { font-size: 16px; } }
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--film); text-underline-offset: 3px; }
+a:hover { color: #ffbe6b; }
+:focus-visible { outline: 2px solid var(--film); outline-offset: 3px; border-radius: 4px; }
+strong { color: var(--cream); font-weight: 700; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+@media (min-width: 720px) { :root { --gutter: 32px; } }
+
+.skip {
+  position: absolute; left: -999px; top: 8px; z-index: 10;
+  background: var(--film); color: #1b120b; padding: 8px 14px; border-radius: 999px; font-weight: 700;
+}
+.skip:focus { left: 8px; }
+
+/* Labels: bold capitals with a little tracking, as in the app. */
+.label, h1, h2, h3, .pill, .nav a, .edge {
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.edge { color: var(--film); font-size: 12px; letter-spacing: 0.12em; }
+
+h1, h2, h3 { line-height: 1.2; margin: 0 0 0.6em; }
+h1 { font-size: clamp(30px, 7.2vw, 60px); letter-spacing: 0.01em; }
+h2 { font-size: clamp(21px, 4.4vw, 32px); }
+h3 { font-size: 16px; }
+p { margin: 0 0 1em; color: var(--cream-dim); }
+.lede { font-size: 1.07em; color: var(--cream); max-width: 40em; }
+
+/* Header */
+.top {
+  position: sticky; top: 0; z-index: 5;
+  background: rgba(38, 26, 18, 0.86);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--cream); text-decoration: none; font-weight: 700; letter-spacing: 0.08em; }
+.brand-icon { width: 30px; height: 30px; flex: none; border-radius: 22.5%; box-shadow: 0 0 0 1px rgba(255,255,255,.12); }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a { color: var(--cream-dim); text-decoration: none; font-size: 12px; padding: 6px 10px; border-radius: 999px; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--cream); background: var(--glass); }
+@media (max-width: 520px) { .nav .wide { display: none; } }
+
+/* Glass pills */
+.pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 20px; border-radius: 999px; font-size: 13px; text-decoration: none;
+  color: var(--cream); background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 6px 20px rgba(0,0,0,0.25);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+.pill:hover { color: var(--cream); background: rgba(255,255,255,0.14); }
+.pill.lit { background: rgba(242, 160, 61, 0.92); color: #1f140c; border-color: rgba(255, 210, 150, 0.7); }
+.pill.lit:hover { background: #ffb257; color: #1f140c; }
+.pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+/* Sections */
+section { padding: 64px 0; border-top: 1px solid var(--line); }
+@media (min-width: 720px) { section { padding: 96px 0; } }
+.section-head { max-width: 44em; margin-bottom: 32px; }
+
+/* Hero */
+.hero { border-top: 0; padding: 40px 0 56px; overflow: hidden; }
+.hero-grid { display: grid; gap: 36px; align-items: center; }
+@media (min-width: 900px) { .hero-grid { grid-template-columns: 1fr 1.1fr; gap: 48px; } .hero { padding: 72px 0 96px; } }
+.hero h1 { margin-bottom: 0.4em; }
+.hero h1 em { font-style: normal; color: var(--film); }
+.status { display: inline-block; margin-bottom: 18px; padding: 5px 12px; border: 1px dashed rgba(242,160,61,0.6); border-radius: 999px; }
+
+/* The wall of prints */
+.wall { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 8px; }
+@media (min-width: 600px) { .wall { gap: 18px; } }
+.wall figure { margin: 0; }
+.print {
+  background: #f5efe3; padding: 0; box-shadow: 0 10px 24px rgba(0,0,0,0.45), 0 2px 4px rgba(0,0,0,0.3);
+  transform: rotate(var(--tilt, 0deg)); transition: transform .3s ease;
+}
+.print img { width: 100%; }
+.wall .print:hover { transform: rotate(0deg) scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .print, .wall .print:hover { transition: none; transform: rotate(var(--tilt, 0deg)); } }
+.wall figure:nth-child(1) { --tilt: -3deg; }
+.wall figure:nth-child(2) { --tilt: 2deg; margin-top: 18px; }
+.wall figure:nth-child(3) { --tilt: -1.5deg; }
+.wall figure:nth-child(4) { --tilt: 2.5deg; }
+.wall figure:nth-child(5) { --tilt: -2deg; margin-top: -10px; }
+.wall figure:nth-child(6) { --tilt: 1.5deg; }
+.wall figure:nth-child(7) { --tilt: -1deg; }
+.wall figure:nth-child(8) { --tilt: 3deg; margin-top: 10px; }
+.wall figure:nth-child(9) { --tilt: -2.5deg; }
+
+/* How it works: numbered steps, numbers in film-edge orange */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: step; }
+@media (min-width: 720px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+.steps li { background: var(--ground-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+.steps li::before { counter-increment: step; content: counter(step, decimal-leading-zero) " / 04"; display: block; color: var(--film); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; margin-bottom: 10px; }
+.steps p { margin: 0; font-size: 0.93em; }
+
+.after { display: grid; gap: 28px; margin-top: 48px; align-items: center; }
+@media (min-width: 860px) { .after { grid-template-columns: 1fr 1fr; gap: 48px; } }
+.post { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.post li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start; }
+.post li span[aria-hidden] { color: var(--film); font-weight: 700; font-size: 20px; line-height: 1.3; }
+.post p { margin: 0; }
+
+/* Phone screenshots */
+.shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+@media (min-width: 860px) { .shots.four { grid-template-columns: repeat(4, 1fr); } }
+.shot { margin: 0; }
+.shot img { border-radius: 22px; border: 1px solid var(--glass-edge); box-shadow: 0 14px 30px rgba(0,0,0,0.4); background: #120c08; }
+.shot figcaption, .cam figcaption { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+/* Cameras */
+.cams { display: grid; gap: 18px; }
+@media (min-width: 720px) { .cams { grid-template-columns: repeat(2, 1fr); } }
+.cam { background: var(--ground-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; }
+.cam header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; align-items: baseline; margin-bottom: 4px; }
+.cam h3 { margin: 0; }
+.cam .meta { color: var(--film); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.cam p { font-size: 0.93em; margin: 6px 0 16px; }
+.cam .prints { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-items: center; margin-top: auto; }
+.cam .prints.two { grid-template-columns: repeat(2, 1fr); }
+.cam .prints a { display: block; }
+.cam .print { --tilt: 0deg; box-shadow: 0 6px 14px rgba(0,0,0,0.4); }
+.digital-note { margin-top: 28px; padding: 16px 20px; border-left: 3px solid var(--film); background: var(--ground-2); border-radius: 0 var(--radius) var(--radius) 0; }
+.digital-note p { margin: 0; }
+
+/* Split feature rows */
+.split { display: grid; gap: 32px; align-items: center; }
+@media (min-width: 860px) { .split { grid-template-columns: 1fr 1fr; gap: 56px; } .split.flip > :first-child { order: 2; } }
+
+.facedown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 460px; }
+.facedown div { aspect-ratio: 2 / 3; background: linear-gradient(160deg, #efe6d4, #d9ccb4); border-radius: 3px; box-shadow: 0 10px 22px rgba(0,0,0,.45); display: grid; place-items: center; color: #8a7558; font-weight: 700; font-size: 34px; }
+.facedown div:nth-child(1) { transform: rotate(-4deg); }
+.facedown div:nth-child(2) { transform: rotate(2deg) translateY(10px); }
+.facedown div:nth-child(3) { transform: rotate(-1deg); }
+.quirks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
+.quirks figure { margin: 0; }
+.quirks figcaption { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+.fold-list { list-style: none; padding: 0; margin: 0 0 1em; display: grid; gap: 12px; }
+.fold-list li { padding-left: 22px; position: relative; color: var(--cream-dim); }
+.fold-list li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 10px; height: 2px; background: var(--film); }
+
+/* Prices: a lab ticket */
+.tickets { display: grid; gap: 16px; }
+@media (min-width: 720px) { .tickets { grid-template-columns: repeat(3, 1fr); } }
+.ticket { background: #f3ead9; color: #2b1f16; border-radius: 6px; padding: 0; overflow: hidden; box-shadow: 0 12px 26px rgba(0,0,0,0.4); }
+.ticket .band { background: #241811; color: var(--cream); padding: 8px 16px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 3px solid var(--film); }
+.ticket .body { padding: 18px 16px 16px; }
+.ticket h3 { color: #2b1f16; margin-bottom: 4px; }
+.ticket .price { font-size: 30px; font-weight: 700; margin: 4px 0 2px; color: #1f140c; }
+.ticket p { color: #4b3a2b; font-size: 0.9em; margin: 0; }
+.ticket .stub { border-top: 2px dashed #c9b99d; padding: 10px 16px; font-size: 12px; color: #5c4834; }
+.small { font-size: 0.86em; color: var(--muted); }
+
+/* FAQ */
+.faq { display: grid; gap: 10px; max-width: 52em; }
+.faq details { background: var(--ground-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 0 18px; }
+.faq summary { cursor: pointer; padding: 16px 28px 16px 0; font-weight: 700; list-style: none; position: relative; color: var(--cream); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 0; top: 14px; color: var(--film); font-size: 20px; }
+.faq details[open] summary::after { content: "\2013"; }
+.faq details > div { padding-bottom: 14px; }
+
+/* Coming soon */
+.soon { text-align: center; }
+.soon .pills { justify-content: center; }
+.soon p { margin-left: auto; margin-right: auto; max-width: 36em; }
+
+/* Text pages (privacy, terms, support) */
+.doc { padding: 48px 0 80px; }
+.doc .wrap { max-width: 780px; }
+.doc h1 { font-size: clamp(26px, 6vw, 40px); }
+.doc h2 { font-size: 18px; margin-top: 2.2em; color: var(--cream); }
+.doc h3 { margin-top: 1.6em; }
+.doc ul { padding-left: 1.2em; color: var(--cream-dim); }
+.doc li { margin-bottom: 0.5em; }
+.updated { display: inline-block; padding: 6px 12px; border: 1px solid var(--film); color: var(--film); border-radius: 999px; font-weight: 700; font-size: 13px; margin-bottom: 20px; }
+.box { background: var(--ground-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 1.2em 0; }
+.box p:last-child { margin: 0; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0 1.6em; font-size: 0.88em; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--cream-dim); }
+th { color: var(--cream); font-weight: 700; }
+
+/* Footer */
+.foot { border-top: 1px solid var(--line); padding: 36px 0 48px; font-size: 13px; color: var(--muted); }
+.foot .wrap { display: grid; gap: 16px; }
+@media (min-width: 720px) { .foot .wrap { grid-template-columns: 1fr auto; align-items: end; } }
+.foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.foot nav a { color: var(--cream-dim); }
+.foot p { margin: 0; color: var(--muted); }
+
+/* Refinements */
+.ticket { display: flex; flex-direction: column; }
+.ticket .stub { margin-top: auto; }
+.cam .prints.two { max-width: 78%; }
+@media (max-width: 859px) { .facedown { display: none; } }
+.pill.mail { text-transform: none; letter-spacing: 0.02em; }
+@media (min-width: 480px) and (max-width: 719px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 479px) { .steps li { padding: 16px; } }
+
+/* Phone shots in a drawn iPhone frame: the JPEG is the phone body, its corners rounded here */
+.phone { margin: 0; }
+.phone img { display: block; width: 100%; height: auto; border-radius: 8.5% / 5.9%; box-shadow: 0 24px 50px rgba(0,0,0,0.55), 0 4px 10px rgba(0,0,0,0.35); }
+.phone figcaption { font-size: 12px; color: var(--muted); margin-top: 10px; text-align: center; }
+/* The hero: the iPhone Duo, half open, the Phold-75's print coming out at the fold. Then the prints section: a pile of
+   prints on a walnut desk. Its track is tall; the stage sticks while it scrolls past, and each scroll step slides the
+   top print off the pile (CSS scroll-driven animation where supported, else the inline script). */
+.hero { background: radial-gradient(ellipse 60% 70% at 72% 50%, rgba(255,214,160,0.13), transparent 70%),
+  linear-gradient(180deg, #2c1d13, var(--ground)); overflow: clip; }
+@media (min-width: 900px) { .hero { padding: 40px 0 64px; } .hero .hero-grid { grid-template-columns: 1fr 1.5fr; gap: 24px; } .bz-hero { margin-right: -4%; } }
+.duo-line { color: var(--cream-dim); border-left: 2px solid var(--film); padding-left: 12px; }
+.bz-hero { width: 100%; }
+.pile-sec { background: linear-gradient(90deg, rgba(20,13,8,0.92) 0%, rgba(20,13,8,0.6) 38%, rgba(20,13,8,0.1) 70%),
+  radial-gradient(ellipse 55% 60% at 70% 45%, rgba(255,214,160,0.16), transparent 70%), #2a1b11 url(img/desk.jpg) center / cover; padding: 40px 0 0; }
+@media (min-width: 900px) { .pile-sec { padding: 0; } .pile-sec .hero-grid { grid-template-columns: 1fr 1.3fr; align-items: start; } }
+.pile-sec .hero-text { padding-top: 8px; }
+@media (min-width: 900px) { .pile-sec .hero-text { position: sticky; top: 56px; min-height: calc(100vh - 56px); display: flex; flex-direction: column; justify-content: center; } }
+.pile-track { position: relative; height: calc(100vh + var(--k) * 32vh); view-timeline: --pile block; }
+.pile-stage { position: sticky; top: 56px; height: calc(100vh - 56px); display: grid; justify-items: center; align-items: center; padding: 12px 0 20px; }
+.pile-wrap { width: 100%; display: grid; justify-items: center; gap: 10px; align-self: center; }
+.pile { position: relative; width: min(100%, 520px, 52vh); aspect-ratio: 1; }
+.pp { position: absolute; left: 50%; top: 50%; margin: 0; width: var(--pw); z-index: var(--z);
+  transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--r)); transition: scale .18s ease; }
+.pp a { display: block; outline: none; }
+.pp img { color: transparent; font-size: 0; background: #efe7d8; } /* a print not loaded yet: just its paper */
+.pp .print, .wall .pp .print:hover { --tilt: 0deg; transform: none; display: block; width: 100%; height: auto;
+  box-shadow: 0 1px 1px rgba(0,0,0,.35), 0 10px 22px rgba(0,0,0,.45); }
+.pp a:focus-visible .print { box-shadow: 0 0 0 3px var(--film), 0 14px 30px rgba(0,0,0,.55); }
+@media (hover: hover) { .pp.top:hover, .pp:has(a:focus-visible) { scale: 1.07; } .pp.top:hover .print { box-shadow: 0 2px 2px rgba(0,0,0,.3), 0 24px 46px rgba(0,0,0,.55); } }
+.pile-cap { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--film); text-align: center; min-height: 1.5em; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.pile-hint { margin: 0; font-size: 11px; color: var(--muted); }
+@keyframes slide-off {
+  0% { translate: 0 0; rotate: 0deg; opacity: 1; }
+  25% { translate: 6% -5%; rotate: 3deg; opacity: 1; }
+  70% { opacity: 1; }
+  100% { translate: 130% 24%; rotate: 18deg; opacity: 0; }
+}
+/* Desktop: the first --k prints (6) roll off with the scroll; after that the page carries on. */
+@supports (animation-timeline: --a) {
+  @media (min-width: 821px) and (hover: hover), (min-width: 821px) and (pointer: fine) {
+    .pp.rolls { animation: slide-off linear both; animation-timeline: --pile;
+      animation-range: contain calc(var(--i) * 100% / var(--k)) contain calc((var(--i) + 1) * 100% / var(--k)); }
+  }
+}
+.pile-nav { display: flex; align-items: center; gap: 14px; }
+.pile-nav[hidden] { display: none; }
+.pile-nav button { font: inherit; font-size: 22px; line-height: 1; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+  color: var(--cream); background: var(--glass); border: 1px solid var(--glass-edge); }
+.pile-nav button:hover { background: rgba(255,255,255,0.14); }
+.pile-scroll a { color: var(--film); }
+@media (min-width: 821px) and (hover: hover) and (prefers-reduced-motion: no-preference), (min-width: 821px) and (pointer: fine) and (prefers-reduced-motion: no-preference) { .pile-nav { display: none !important; } }
+/* Phones, touch screens and reduced motion: no scroll-through. The pile sits at its own height and the prints
+   flip with a swipe, a tap on the top print or the ‹ › buttons, so the page scrolls straight past. */
+@media (max-width: 820px), (hover: none) and (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .pile-track { height: auto; } .pile-stage, .pile-sec .hero-text { position: static; height: auto; min-height: 0; }
+  .pile-stage { padding: 8px 0 40px; }
+  .pile { touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+  .pp { animation: none !important; transition: translate .45s ease, rotate .45s ease, opacity .45s ease, scale .18s ease; }
+  .pp.gone { translate: 130% 24%; rotate: 18deg; opacity: 0; pointer-events: none; }
+  .pile-scroll { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .pp { transition: none; } }
+.cams-head { display: grid; gap: 24px; align-items: center; margin-bottom: 32px; }
+.cams-head .section-head { margin-bottom: 0; }
+.cam-phone { width: min(56%, 240px); justify-self: center; }
+@media (min-width: 860px) { .cams-head { grid-template-columns: 1fr 240px; gap: 56px; } }
+.duo-shot img { border: 0; box-shadow: none; background: none; border-radius: 0; }
+.shots:has(.duo-shot) { grid-template-columns: 1.5fr 1fr; align-items: center; }
+.duo-shot figcaption { text-align: center; }
+
+/* Room backdrops: each section sits in one of the app's rooms, softly blurred behind a dark warm wash so text stays
+   readable; the camera shop (How it works) stays sharp under a deeper wash. A gentle drift on wide screens. */
+main > section:not(.hero):not(.pile-sec), .foot { position: relative; isolation: isolate; overflow: clip; }
+.backdrop { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.backdrop img { position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover; }
+.backdrop::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(38,26,18,0.9) 0%, rgba(38,26,18,0.7) 30%, rgba(38,26,18,0.74) 70%, rgba(38,26,18,0.94) 100%); }
+.backdrop.sharp::after { background: linear-gradient(180deg, rgba(30,20,13,0.92) 0%, rgba(30,20,13,0.66) 35%, rgba(30,20,13,0.72) 70%, rgba(30,20,13,0.95) 100%); }
+.foot .backdrop::after { background: linear-gradient(180deg, rgba(38,26,18,0.96), rgba(38,26,18,0.8)); }
+@supports (animation-timeline: view()) {
+  @media (min-width: 821px) and (prefers-reduced-motion: no-preference) {
+    .backdrop img { animation: drift linear both; animation-timeline: view(); }
+    @keyframes drift { from { translate: 0 -5%; } to { translate: 0 5%; } }
+  }
+}
+.steps li, .cam, .faq details { background-color: rgba(49, 34, 24, 0.82); }
+
+/* Phone shots, slightly off angle like a product shot, with a soft shadow and a little glare */
+.device { display: block; position: relative; transform: perspective(1400px) rotateY(var(--ry)) rotateX(var(--rx)); transform-origin: 50% 50%; }
+.device.tilt-l { --ry: 12deg; --rx: 4deg; }
+.device.tilt-r { --ry: -12deg; --rx: 4deg; }
+.device img { display: block; }
+.phone .device img, .shot .device img { box-shadow: -18px 28px 40px rgba(0,0,0,0.5), -4px 8px 12px rgba(0,0,0,0.35); }
+.device.tilt-r img { box-shadow: 18px 28px 40px rgba(0,0,0,0.5), 4px 8px 12px rgba(0,0,0,0.35) !important; }
+.device::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(118deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.05) 28%, rgba(255,255,255,0) 42%); }
+.phone .device, .phone .device::after { border-radius: 8.5% / 5.9%; }
+.shot .device, .shot .device::after { border-radius: 22px; }
+.device.no-glare::after { display: none; }
+.duo-shot .device img { box-shadow: none !important; filter: drop-shadow(0 26px 30px rgba(0,0,0,0.55)); }
+
+/* The folding computer: closed, then half open */
+.fold-seq { margin-top: 56px; }
+.fold-seq > p { max-width: 44em; color: var(--cream-dim); }
+.fold-steps { display: grid; gap: 18px; align-items: center; margin-top: 18px; }
+.fold-steps .phone { width: min(60%, 230px); justify-self: center; }
+.fold-arrow { justify-self: center; color: var(--film); font-size: 28px; transform: rotate(90deg); }
+@media (min-width: 720px) { .fold-steps { grid-template-columns: 230px 40px minmax(0, 520px); justify-content: center; }
+  .fold-steps .phone { width: 100%; } .fold-arrow { transform: none; } }
+
+/* Each camera, rendered from the app's own model, beside its words */
+.cam-top { display: grid; grid-template-columns: 1fr minmax(120px, 42%); gap: 6px 14px; align-items: center; margin: 4px 0 10px; }
+.cam-top p { margin: 0; }
+.cam-model { width: 100%; height: auto; display: block; margin: -6px -8px -6px 0; filter: drop-shadow(0 10px 14px rgba(0,0,0,0.35));
+  transition: transform .35s ease; transform: perspective(700px) rotateY(0deg); }
+@media (hover: hover) { .cam:hover .cam-model { transform: perspective(700px) rotateY(-14deg) scale(1.04); } }
+@media (max-width: 479px) { .cam-top { grid-template-columns: 1fr; } .cam-model { width: min(70%, 240px); justify-self: center; margin: 0 auto 4px; order: -1; } }
+@media (prefers-reduced-motion: reduce) { .cam-model { transition: none; } .cam:hover .cam-model { transform: none; } }
+
+/* Prints dropped on the table: tilted, nudged, a little over each other. The script picks a new layout each visit;
+   without it, these fixed ones. Hover or focus lifts one straight; a tap opens the camera's gallery. */
+.strewn > * { position: relative; z-index: var(--z, 1); transform: translate(var(--dx, 0), var(--dy, 0)) rotate(var(--r, 0deg));
+  transition: transform .18s ease, z-index 0s; }
+.strewn > :nth-child(1) { --r: -5deg; --dy: 4px; }
+.strewn > :nth-child(2) { --r: 4deg; --dy: -6px; --z: 2; }
+.strewn > :nth-child(3) { --r: -3deg; --dx: -4px; --dy: 6px; }
+.cam .prints.strewn { gap: 0; padding: 10px 6px 6px; }
+.cam .prints.strewn > a { margin: 0 -5%; }
+.cam .prints.strewn .print, .quirks.strewn .print { box-shadow: 0 1px 1px rgba(0,0,0,.3), 0 8px 18px rgba(0,0,0,.42); }
+.strewn > :hover, .strewn > :focus-within { z-index: 10; transform: translate(0, -4px) rotate(0deg) scale(1.12); }
+.strewn > :hover .print, .strewn > :focus-within .print { box-shadow: 0 2px 2px rgba(0,0,0,.3), 0 18px 34px rgba(0,0,0,.5); }
+@media (prefers-reduced-motion: reduce) {
+  .strewn > * { transition: none; }
+  .strewn > :hover, .strewn > :focus-within { transform: translate(var(--dx, 0), var(--dy, 0)) rotate(var(--r, 0deg)); }
+  .strewn > :hover .print, .strewn > :focus-within .print { box-shadow: 0 0 0 3px var(--film), 0 8px 18px rgba(0,0,0,.42); }
+}
+.strewn a:focus-visible { outline: none; } .strewn a:focus-visible .print { box-shadow: 0 0 0 3px var(--film), 0 12px 26px rgba(0,0,0,.5); }
+
+/* The gallery */
+html.lb-open { overflow: hidden; }
+.lb { position: fixed; inset: 0; z-index: 50; background: rgba(16, 10, 6, 0.94); display: grid; grid-template-rows: 1fr auto auto; padding: 56px 16px 16px; }
+.lb[hidden] { display: none; }
+.lb-stage { display: grid; place-items: center; align-content: center; gap: 10px; min-height: 0; }
+.lb-img { max-width: min(100%, 900px); max-height: calc(100vh - 230px); width: auto; height: auto; object-fit: contain; background: #efe7d8;
+  box-shadow: 0 20px 50px rgba(0,0,0,.6); }
+.lb-cap { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--film); text-align: center; }
+.lb-count { margin: 8px 0; text-align: center; font-size: 12px; color: var(--muted); }
+.lb-btn { position: absolute; width: 44px; height: 44px; border-radius: 50%; font: inherit; font-size: 24px; line-height: 1; cursor: pointer;
+  color: var(--cream); background: var(--glass); border: 1px solid var(--glass-edge); }
+.lb-btn:hover { background: rgba(255,255,255,.16); }
+.lb-btn:focus-visible, .lb-thumb:focus-visible { outline: 3px solid var(--film); outline-offset: 2px; }
+.lb-close { top: 10px; right: 12px; }
+.lb-prev, .lb-next { top: calc(50% - 60px); }
+.lb-prev { left: 12px; } .lb-next { right: 12px; }
+.lb-strip { display: flex; gap: 6px; overflow-x: auto; justify-content: safe center; padding: 4px 2px; scrollbar-width: thin; }
+.lb-thumb { flex: none; width: 54px; height: 54px; padding: 0; border: 2px solid transparent; border-radius: 6px; overflow: hidden; background: #2a1d14; cursor: pointer; }
+.lb-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lb-thumb[aria-current="true"] { border-color: var(--film); }
+@media (max-width: 600px) { .lb-prev, .lb-next { top: auto; bottom: 96px; } .lb-img { max-height: calc(100vh - 260px); } }
+
+/* Prices: the region switcher */
+.regions { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.regions[hidden] { display: none; }
+.regions button { font: inherit; font-size: 12px; font-weight: 700; letter-spacing: .06em; padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  color: var(--cream); background: var(--glass); border: 1px solid var(--glass-edge); }
+.regions button[aria-pressed="true"] { background: rgba(242,160,61,0.92); color: #1f140c; border-color: rgba(255,210,150,0.7); }
+.coming { margin: 18px 0 0; padding: 12px 16px; border-left: 3px solid var(--film); background: rgba(49,34,24,.82); border-radius: 0 var(--radius) var(--radius) 0; }
+.soon .code { font-family: inherit; letter-spacing: 0.08em; color: var(--film); }
+
+/* Support: Contact us */
+.contact { max-width: 40em; margin: 8px 0 48px; padding: 24px; border-radius: var(--radius);
+           background: var(--glass); border: 1px solid var(--line); }
+.contact h2 { font-size: 20px; }
+.contact label { display: block; margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cream); }
+.contact label span { font-weight: 400; text-transform: none; color: var(--muted); }
+.contact input, .contact select, .contact textarea {
+  display: block; width: 100%; margin-top: 6px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400;
+  text-transform: none; letter-spacing: normal; color: var(--cream); background: rgba(0,0,0,0.25);
+  border: 1px solid var(--line); border-radius: 10px; box-sizing: border-box;
+}
+.contact textarea { resize: vertical; min-height: 140px; }
+.contact input:focus, .contact select:focus, .contact textarea:focus { outline: 2px solid var(--film); outline-offset: 1px; }
+.contact .row { display: grid; gap: 0 14px; }
+@media (min-width: 560px) { .contact .row { grid-template-columns: 1fr 1fr; } }
+.contact .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.contact button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.contact button.pill:disabled { opacity: 0.6; cursor: default; }
+.contact .note { min-height: 1.4em; margin: 4px 0 0; color: var(--film); }
+.contact .note.sent { color: var(--cream); }
+.contact .small { font-size: 13px; color: var(--muted); margin: 14px 0 0; }
+
+/* iPhone Duo pictures: the app's own screenshots (current build, Simulator, inner display upright) composited into Apple's
+   official iPhone Duo product bezels (Apple Design Resources: Night Sky, Inner Partially Open Portrait and Outer
+   Closed Portrait). */
+.bz { position: relative; margin: 0; }
+.bz > img { display: block; width: 100%; height: auto; filter: drop-shadow(0 24px 30px rgba(0,0,0,.5)); }
+.bz figcaption { text-align: center; font-size: 12px; line-height: 1.45; color: var(--muted); margin-top: 10px; padding: 0 6%; }
+.bz-low { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; pointer-events: none; }
+.bz-big { max-width: 760px; margin: 8px auto 0; }
+.duo-grid { display: grid; gap: 28px 40px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); margin-top: 12px; }
+.bzc { display: block; width: 100%; height: auto; filter: drop-shadow(0 20px 26px rgba(0,0,0,.5)); }
+/* The hero's Phold-75: the print comes out of the slot just above the fold and slides down onto the lower screen, where
+   it develops, then the next. The tray's top edge is the fold, so the print appears from under the crease. Its place
+   is where the app puts it (fractions of the lower screen). */
+.duo-tray { position: absolute; left: 28.6%; width: 42.7%; top: 0; height: 88%; overflow: hidden; }
+.duo-print { position: absolute; left: 0; right: 0; top: 15.9%; }
+.duo-print img { position: static; width: 100%; height: auto; display: block; box-shadow: 0 6px 14px rgba(0,0,0,.45); }
+.duo-print::after { content: ""; position: absolute; inset: 5.5% 5% 20.7% 5.1%; background: #16201d; opacity: var(--dark, 0); }
+
+/* "Built for iPhone Duo": darkroom safelight red, so it stands out from the film-edge orange. */
+:root { --safelight: #e5483a; }
+.duo-badge { color: #fff; background: var(--safelight); border: 0; font-weight: 700; padding: 6px 14px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 6px 22px rgba(229,72,58,.45); }
+.duo-line { border-left-color: var(--safelight); }
+.shot img.bzc, .phone img.bzc { border: 0; border-radius: 0; box-shadow: none; background: none; }
+
+/* Real prints, real post: Eammon's photos of the first sample rolls back from the lab (19 Oct 2026 order). */
+.real-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+.real-grid figure { margin: 0; }
+.real-grid img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; display: block; box-shadow: 0 14px 30px rgba(0,0,0,.4); }
+.real-grid figcaption { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--film); margin-top: 8px; }
+.real-grid .r-lead { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; }
+.real-grid .r-lead img { aspect-ratio: auto; flex: 1; min-height: 0; }
+@media (max-width: 720px) { .real-grid { grid-template-columns: 1fr 1fr; } .real-grid .r-lead { grid-column: span 2; grid-row: auto; } .real-grid .r-lead img { aspect-ratio: 3 / 2; flex: none; } }

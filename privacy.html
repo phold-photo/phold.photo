@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Phold</title>
+<meta name="description" content="Phold's privacy policy, in plain English: what the app uses, what leaves your phone, who it goes to and why.">
+<meta name="theme-color" content="#261a12">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=20261031d">
+<link rel="canonical" href="https://phold.photo/privacy.html">
+<meta property="og:title" content="Privacy · Phold">
+<meta property="og:image" content="https://phold.photo/img/og.jpg">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Phold, home"><img class="brand-icon" src="icon-64.png" width="32" height="32" alt=""> PHOLD</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc">
+<div class="wrap">
+  <p class="updated">Last updated 26 October 2026</p>
+  <h1>Privacy policy</h1>
+  <p class="lede">The short version: your photos stay on your phone. The only pictures that leave it are the print files of a roll you've paid for and handed in (or of a print you've ordered from your pictures), and they go to the lab that prints them. We need your name, address and email to post your prints and send your receipt. No ads, no tracking, no selling your data, no account.</p>
+
+  <div class="box">
+    <p>This policy covers the Phold app for iPhone and this website, phold.photo. Phold is made by <strong>One Man Band Media DC LLC</strong>, a company in Washington, DC, United States ("we", "us"). We're responsible for your information. Write to <a href="mailto:eammon@phold.photo">eammon@phold.photo</a> with any question or request.</p>
+  </div>
+
+  <h2>What the app uses on your phone</h2>
+  <h3>The camera</h3>
+  <p>Phold uses your iPhone's camera to "expose your film". The pictures you take are kept inside the app on your phone. Film pictures aren't shown to you until the prints arrive, but they're still only on your phone until you hand the roll in (see below).</p>
+  <p>To make focus look right, the app works out roughly where people are in a picture and how far away things are, using your phone's own image tools and, where the camera gives it, its depth reading. This all happens on your phone. It isn't used to recognise anyone, and nothing about it is sent to us.</p>
+
+  <h3>Your photo library: adding only</h3>
+  <p>When you copy a digital camera's pictures to your phone on the in-app laptop, Phold saves them to your photo library. It asks for permission to <strong>add</strong> photos only. It can't see, read or change the photos already in your library.</p>
+
+  <h3>Location: not used</h3>
+  <p>Phold doesn't ask for or use your location. (We've thought about using the local temperature to change how instant film develops. That isn't in the app. If we ever add it, the app will ask you first and this policy will say so.)</p>
+
+  <h3>Things kept on your phone</h3>
+  <p>Your rolls, your settings, the film you've bought and your progress are stored in the app on your phone. Deleting the app deletes them. The app also makes a random number for this install (not your Apple ID or your device's own identifiers). It goes with your orders, crash reports and Contact us messages, so we can match a problem to your roll, and it limits wrong guesses at unlock codes (see below).</p>
+
+  <h2>What leaves your phone, and why</h2>
+
+  <h3>When you buy film: Apple Pay and Stripe</h3>
+  <p>You pay with Apple Pay. In the Apple Pay sheet you choose a delivery <strong>name, postal address and email address</strong>. These, the order and an encrypted payment token from Apple Pay go to our server, which takes the payment through <strong>Stripe</strong>, our payment processor. Stripe also works out any sales tax and sends your receipt to your email.</p>
+  <p><strong>We never see or store your card number.</strong> Apple Pay gives us a one-time token that only Stripe can use. Stripe may keep details such as your card type and its last four digits, as any payment company does. Apple's and Stripe's own privacy policies cover what they do as payment providers.</p>
+  <p>Our server keeps a record of each order: what you bought, the price, your delivery address and email, and a "ticket" for each roll, so the right roll can be printed and posted to the right place.</p>
+
+  <h3>When you hand in a roll: the print lab, Prodigi</h3>
+  <p>When you hand in a paid roll, the app makes the print files (your pictures, laid out on the paper as the camera prints them, plus the card that goes in your envelope) and uploads them to our storage. We then send the order to our print lab, <strong>Prodigi</strong>, with your <strong>name, delivery address and email address</strong>, and links to the print files. Prodigi downloads the files, prints them and posts them to you, and tells us how the order is going and its tracking. Prodigi works with labs in several countries and usually prints near where it's posted to. The same goes for anything else you order printed from your pictures.</p>
+  <p>A roll you haven't paid for is never uploaded. Its pictures stay on your phone.</p>
+  <h3>Checking prints</h3>
+  <p>So every roll comes out well, Eammon, who makes Phold, may look over the print files of some rolls on our server before or after the lab prints them: a few at random, any the app flags as possibly blank, very dark, very bright or flat (it checks each print as it makes it, on your phone), and any you've asked us about. He sees the prints, the camera and film, and the country they're posted to, not your name or address. They're only ever used to check and fix the printing, never shared, published or used for anything else, and they're deleted with the rest of the roll's files. To ask us not to look at yours, write to <a href="mailto:eammon@phold.photo">eammon@phold.photo</a>.</p>
+
+  <h3>Where it's stored: Supabase, in the US</h3>
+  <p>Our server, database and print-file storage run on <strong>Supabase</strong>, in its US West (Oregon) region (Amazon Web Services, us-west-2). The print files are kept private and are reached only through short-lived links.</p>
+
+  <h3>The card in your envelope</h3>
+  <p>Each roll's card has a code that opens your digital copies. The code only exists on the printed card: we keep a scrambled one-way version of it (a hash), not the code itself, so even we can't read it back from our records. When you scan or type it, the app sends the code to our server, which checks it and sends back links to that roll's print files. The card holds no personal information.</p>
+  <p>To stop people guessing codes, the server notes each attempt with your <strong>IP address</strong> and the app's random install number, and allows only a few wrong codes an hour. The card also gives a 10% next-roll coupon, which our server keeps with the roll it came from.</p>
+
+  <h3>When you share</h3>
+  <p>Sharing your prints from the app uses your iPhone's share sheet. Whatever you share goes straight to the app you pick; it doesn't pass through us.</p>
+
+  <h3>When you email us, or use Contact us in the app or on this website</h3>
+  <p>If you write to eammon@phold.photo, we'll have your email and whatever you send us. Our email is hosted by Google Workspace.</p>
+  <p>The app's <strong>Contact us</strong> form sends your <strong>email address</strong>, your message and, only if you fill them in, your <strong>name and phone number</strong>, so we can answer you. To help us find a problem it adds the phone's model, iOS and app version, the screen and camera you were on, the film in it, your country's shop, and the last steps the app took before you wrote (the same as a crash report: never your photos). It goes through Sentry (below), and we keep it as long as we need it to help you.</p>
+  <p>The website's <strong>Contact us</strong> form sends the same (email, message, and name and phone if you give them), with the page you sent it from. It's kept on our server and passed to Sentry, so we can answer you. With it we keep a scrambled form of your internet address, only to stop floods of messages; never the address itself.</p>
+
+  <h2>Who gets your information</h2>
+  <table>
+    <thead><tr><th scope="col">Who</th><th scope="col">What for</th><th scope="col">What they get</th></tr></thead>
+    <tbody>
+      <tr><td>Apple</td><td>Apple Pay; the App Store; TestFlight during the beta</td><td>Your payment, as Apple Pay handles it. If you opt in, Apple shares crash reports and beta feedback with us.</td></tr>
+      <tr><td>Stripe</td><td>Taking payments, refunds, working out tax, sending receipts</td><td>The payment token, the amount, your delivery address and email</td></tr>
+      <tr><td>Prodigi</td><td>Printing and posting your prints</td><td>Your print files, name, delivery address and email</td></tr>
+      <tr><td>Supabase (on Amazon Web Services)</td><td>Running our server, database and file storage</td><td>Everything our server keeps, on our behalf</td></tr>
+      <tr><td>Sentry</td><td>Crash and error reports, so we can fix them</td><td>What went wrong, the phone model, iOS and app version, and the app's random install number, which also goes with your orders; and what you send with Contact us in the app. Never your photos or address, and no screenshots</td></tr>
+      <tr><td>TelemetryDeck</td><td>Anonymous usage counts, so we can see where people get stuck</td><td>A few moments (a camera picked, film bought, a roll finished, handed in, prints opened) with the camera or country shop, under an anonymised id. Never your photos, name, address, email or anything you type</td></tr>
+      <tr><td>Google Workspace</td><td>Our email</td><td>Emails you send us</td></tr>
+      <tr><td>Postal carriers</td><td>Delivering your envelope</td><td>Your name and address, as printed on it by the lab</td></tr>
+    </tbody>
+  </table>
+  <p>They act for us and may use your information only to do that job (and as the law requires). We don't sell your information, rent it, or share it for advertising. We'd only hand it to anyone else if the law made us.</p>
+  <p><strong>During the private beta:</strong> if you use a beta invite code, a second copy of your prints is posted to Eammon, who makes Phold, and he can see your digital copies, so he can check how they turned out. The app asks you to agree to this before your beta roll is ordered, and records that you did. Only your first name and town go with the copy, never your full address.</p>
+
+  <h2>What Phold doesn't do</h2>
+  <ul>
+    <li>No ads.</li>
+    <li>No tracking across other apps and websites, and no analytics on this website. The app sends only crash reports and anonymous usage counts (below).</li>
+    <li>No selling or "sharing" of personal information, as California law uses those words.</li>
+    <li>No account, no sign-in, no profile.</li>
+    <li>No access to your location, contacts, microphone or the photos already in your library.</li>
+  </ul>
+
+  <h2>How long we keep it</h2>
+  <ul>
+    <li><strong>Print files</strong> (your pictures as printed, and the card): kept for <strong>90 days</strong> after the order, then deleted. That's long enough for the lab, for a reprint if something goes wrong, and for you to get your digital copies again on a new phone. Keep the copies you want once they've opened.</li>
+    <li><strong>Order records</strong> (what you bought, the price, your delivery address and email, the order's status and tracking): kept for as long as tax and accounting law requires us to keep sales records, then deleted.</li>
+    <li><strong>Unlock-code attempts</strong> (IP address and install number): kept only as long as needed to limit guessing.</li>
+    <li><strong>Emails</strong> you send us: as long as we need them to help you.</li>
+  </ul>
+  <p>Stripe and Prodigi keep their own records for as long as the law requires them to.</p>
+
+  <h2>The legal part (UK and EU)</h2>
+  <p>If you're in the UK or the EU, data protection law (the UK GDPR and the GDPR) says we need a reason to use your information. Ours are: to carry out the order you placed (your name, address, email and print files); to meet our legal duties (keeping sales and tax records); and our legitimate interest in keeping the service safe (limiting code guessing) and in making sure your prints come out well (checking prints).</p>
+  <p>Our server is in the US and Prodigi may print in another country from yours, so your information may be handled outside the UK or EU. Where that happens we rely on the safeguards the law provides, such as the standard contractual clauses in our providers' data processing terms.</p>
+
+  <h2>Your rights</h2>
+  <p>Wherever you live, you can ask us for a copy of the information we hold about you, to correct it, or to delete it (unless we must keep it, as with sales records). You can object to how we use it or ask us to limit it. Write to <a href="mailto:eammon@phold.photo">eammon@phold.photo</a> and tell us which order it's about: the roll number on your envelope or card helps. We'll answer within a month. Because there are no accounts, we may ask you to confirm the delivery address or email from your order, so we know it's you.</p>
+  <p>If you're unhappy with how we've handled your information, you can complain to your data protection authority: in the UK, the Information Commissioner's Office (ico.org.uk); in the EU, the authority in your country. We'd like the chance to sort it out first.</p>
+  <p>Californian and other US state residents have the right to know, delete and correct their information, and to not be discriminated against for asking. We don't sell or share personal information, so there's nothing to opt out of.</p>
+
+  <h2>Children</h2>
+  <p>Phold isn't made for children under 13, and we don't knowingly collect information from them. Buying film needs Apple Pay. If you think a child under 13 has given us their information, write to us and we'll delete it.</p>
+
+  <h2>This website</h2>
+  <p>phold.photo is a plain website with no cookies, no analytics, no tracking and nothing loaded from other sites. It's hosted by GitHub Pages, whose servers, like any web host's, see your IP address to send you the page and may log it for security.</p>
+
+  <h2>Changes</h2>
+  <p>If we change what Phold does with your information, we'll update this page and the date at the top. If it's a big change, the app will tell you too.</p>
+
+  <h2>Contact</h2>
+  <p>One Man Band Media DC LLC, Washington, DC, United States · <a href="mailto:eammon@phold.photo">eammon@phold.photo</a></p>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><p>Phold is made by One Man Band Media DC LLC.</p></div>
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms of sale</a>
+      <a href="mailto:eammon@phold.photo">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
