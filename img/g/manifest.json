@@ -1,0 +1,818 @@
+{
+ "bellows": {
+  "name": "Bellows No. 1",
+  "stock": "Funfair 400",
+  "photos": [
+   {
+    "f": "g/bellows/brick-corner-golden.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Bellows No. 1 · Funfair 400: a red-brick corner in golden light",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/bison-prairie.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: bison grazing on the prairie",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/alpine-town-snow.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: a snowy mountain town at dusk",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/badlands-butte.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: a badlands butte above the sagebrush",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/stone-wall-moor.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: an old stone wall across green moorland",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/hill-fence-dusk.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: a hillside and fence post at dusk",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/lake-crag-view.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: a lake below a rocky crag",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/moated-castle.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Funfair 400: a moated castle under a blue sky",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/lighthouse-bay.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Bellows No. 1 · Funfair 400: a lighthouse on a rock in the bay",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/bellows/cathedral-tower.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Bellows No. 1 · Parlour 125: a cathedral bell tower against a blue sky",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/bellows/battlefield-cannons.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Bellows No. 1 · Parlour 125: old cannons on a misty battlefield",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/bellows/memorial-obelisk.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Bellows No. 1 · Parlour 125: a stone obelisk on a green mound",
+    "stock": "Parlour 125"
+   }
+  ]
+ },
+ "reflexTwin": {
+  "name": "Reflex Twin 6×6",
+  "stock": "Parlour 125",
+  "photos": [
+   {
+    "f": "g/reflexTwin/kookaburra.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a kookaburra on a balcony rail",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/mosque-domes.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: white domes over an arcade",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/rhino-resting.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a rhino resting in the dust",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/projector-lamp.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: an old film-projector lamp on a brick wall",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/lions-resting.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a lion and lioness asleep by a wall",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/fountain-tiers.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a tiered stone fountain",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/mosaic-fireplace.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a fire in a mosaic fireplace",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/bulldog-stove.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a French bulldog asleep by the wood stove",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/shaggy-dog.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a shaggy golden dog at a café",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/cloth-hall.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a gothic cloth hall and its tower",
+    "stock": "Parlour 125"
+   },
+   {
+    "f": "g/reflexTwin/boardwalk-woods.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Reflex Twin 6×6 · Parlour 125: a wooden boardwalk through the woods",
+    "stock": "Parlour 125"
+   }
+  ]
+ },
+ "funSnap": {
+  "name": "FunSnap 27",
+  "stock": "Holiday 400",
+  "photos": [
+   {
+    "f": "g/funSnap/beach-dog-stick.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "FunSnap 27 · Holiday 400: a dog running with a stick on the beach",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/mirror-room-dots.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Nightbus 800: a mirrored room of red polka dots",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/funSnap/band-on-stage.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Nightbus 800: a band on a bar stage",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/funSnap/ice-cream-selfie.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Holiday 400: three friends with ice creams, a selfie",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/tomahawk-steak.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "FunSnap 27 · Holiday 400: a big steak on a dinner table",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/rapeseed-friends.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "FunSnap 27 · Holiday 400: two friends in a field of yellow rapeseed",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/festive-plate.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "FunSnap 27 · Holiday 400: a festive plate of prawns and ham",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/petunia-bed.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Holiday 400: a bed of purple and pink petunias",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/crawfish-basket.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Holiday 400: a basket of crawfish",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/oysters-skyline.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Holiday 400: oysters on ice before a city skyline",
+    "stock": "Holiday 400"
+   },
+   {
+    "f": "g/funSnap/hammock-pines.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "FunSnap 27 · Holiday 400: feet up in a hammock in the pines",
+    "stock": "Holiday 400"
+   }
+  ]
+ },
+ "kompakt": {
+  "name": "Kompakt LC",
+  "stock": "Nightbus 800",
+  "photos": [
+   {
+    "f": "g/kompakt/neon-street.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: neon signs on a street at night",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/mural-arms-wide.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: a woman with arms wide before a colourful mural",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/bridge-night-lights.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Nightbus 800: a lit bridge over a dark river at night",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/moated-castle.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Nightbus 800: a moated castle under a blue sky",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/giraffe-hills.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: a giraffe in the scrub below hills",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/lighthouse-bay.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: a lighthouse on a rock in the bay",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/green-house.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: a bright green house with red windows",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/pines-from-below.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: pines from below against the sky",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/dock-pilings.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: weathered dock pilings under a blue sky",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/wicker-figure.jpg",
+    "w": 427,
+    "h": 640,
+    "alt": "Kompakt LC · Nightbus 800: a wicker figure in a red coat, arms out",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/monument-night.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Nightbus 800: a floodlit monument at night",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/rhino-pair.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Nightbus 800: two rhinos on dry earth",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/mountains-golden.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Nightbus 800: craggy mountains in the last sun",
+    "stock": "Nightbus 800"
+   },
+   {
+    "f": "g/kompakt/san-antonio-letters.jpg",
+    "w": 640,
+    "h": 427,
+    "alt": "Kompakt LC · Holiday 400: big painted letters and skeleton figures",
+    "stock": "Holiday 400"
+   }
+  ]
+ },
+ "plastique": {
+  "name": "Plastique 120",
+  "stock": "Funfair 400",
+  "photos": [
+   {
+    "f": "g/plastique/beach-sunrise.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: the sun rising over the sea from an empty beach",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/bulldog-hillside.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a French bulldog looking over the fields",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/rocky-shore-sun.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a man on a rocky shore under a low sun",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/rapeseed-couple.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a couple hugging in a rapeseed field",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/road-sunset.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a low sun over a highway through the windscreen",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/badlands-valley.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a river winding through the badlands",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/sunset-cameraman.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a cameraman kneeling in a field at sunset",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/snowy-valley.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Funfair 400: a snowy valley under the peaks",
+    "stock": "Funfair 400"
+   },
+   {
+    "f": "g/plastique/forest-canopy.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Seaside 400: tall trees seen from the forest floor",
+    "stock": "Seaside 400"
+   },
+   {
+    "f": "g/plastique/frosty-park-dawn.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Seaside 400: a frosty park at sunrise",
+    "stock": "Seaside 400"
+   },
+   {
+    "f": "g/plastique/cloud-mountain-beach.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Seaside 400: clouds rolling over mountains behind a beach",
+    "stock": "Seaside 400"
+   },
+   {
+    "f": "g/plastique/garden-arbor.jpg",
+    "w": 640,
+    "h": 640,
+    "alt": "Plastique 120 · Seaside 400: a flowering arbor by a pool",
+    "stock": "Seaside 400"
+   }
+  ]
+ },
+ "fold70": {
+  "name": "Phold-75",
+  "stock": "Kitchen Table",
+  "photos": [
+   {
+    "f": "g/fold70/zinnia-vases.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: zinnias in jam-jar vases",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/bulldog-sofa.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: a French bulldog on the sofa",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/waffle-fruit.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: a waffle with strawberries and banana",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/plane-wing-dawn.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Afterglow: a plane's wing over the land at dawn",
+    "stock": "Afterglow"
+   },
+   {
+    "f": "g/fold70/table-mountain-cloud.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Afterglow: a cloud spilling over a mountain",
+    "stock": "Afterglow"
+   },
+   {
+    "f": "g/fold70/cheese-board-square.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: a cheese board on a café table on a square",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/crawfish-boil.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: a crawfish boil tipped out on newspaper",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/butterfly-shoulder.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: a butterfly on a shoulder",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/steak-frites.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: steak and chips at a café table",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/wisteria-cottage.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Kitchen Table: wisteria over a shingled cottage and a red mailbox",
+    "stock": "Kitchen Table"
+   },
+   {
+    "f": "g/fold70/bulldog-stove.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Silver Hour: a French bulldog asleep by the wood stove",
+    "stock": "Silver Hour"
+   },
+   {
+    "f": "g/fold70/vine-wall.jpg",
+    "w": 522,
+    "h": 640,
+    "alt": "Phold-75 · Silver Hour: a wall of leaves and white flowers",
+    "stock": "Silver Hour"
+   }
+  ]
+ },
+ "pocketCam": {
+  "name": "Pocket Cam PK-1",
+  "stock": "digital",
+  "photos": [
+   {
+    "f": "g/pocketCam/kookaburra.jpg",
+    "w": 560,
+    "h": 640,
+    "alt": "Pocket Cam PK-1: a kookaburra on a balcony rail",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/ice-cream-selfie.jpg",
+    "w": 560,
+    "h": 640,
+    "alt": "Pocket Cam PK-1: three friends with ice creams, a selfie",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/snow-selfie-park.jpg",
+    "w": 640,
+    "h": 560,
+    "alt": "Pocket Cam PK-1: a snowy selfie by a fountain in the park",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/canyon-selfie.jpg",
+    "w": 640,
+    "h": 560,
+    "alt": "Pocket Cam PK-1: a selfie with a film camera at a canyon at sunrise",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/bulldog-sofa.jpg",
+    "w": 560,
+    "h": 640,
+    "alt": "Pocket Cam PK-1: a French bulldog on the sofa",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/niagara-boat-selfie.jpg",
+    "w": 640,
+    "h": 560,
+    "alt": "Pocket Cam PK-1: a soaked selfie on the boat below the falls",
+    "stock": "digital"
+   },
+   {
+    "f": "g/pocketCam/castle-path-portrait.jpg",
+    "w": 640,
+    "h": 560,
+    "alt": "Pocket Cam PK-1: a man on the path to a ruined castle",
+    "stock": "digital"
+   }
+  ]
+ },
+ "dc21": {
+  "name": "Snapper 100 Zoom",
+  "stock": "digital",
+  "photos": [
+   {
+    "f": "g/dc21/green-house.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Snapper 100 Zoom: a bright green house with red windows",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/street-flowers.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Snapper 100 Zoom: pink flowers along a sunny street",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/bakery-counter.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: a bakery counter of croissants",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/statue-couple.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: a couple beside a statue on a rock",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/cows-fence.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: cows along a fence under festoon lights",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/rooftop-deck.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: a rooftop deck being built, a man resting on a bench",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/campsite-tent.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: an orange tent at a campsite in the pines",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/brick-corner-golden.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Snapper 100 Zoom: a red-brick corner in golden light",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/dock-pilings.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Snapper 100 Zoom: weathered dock pilings under a blue sky",
+    "stock": "digital"
+   },
+   {
+    "f": "g/dc21/festive-plate.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Snapper 100 Zoom: a festive plate of prawns and ham",
+    "stock": "digital"
+   }
+  ]
+ },
+ "c20": {
+  "name": "Daisy 200 Zoom",
+  "stock": "digital",
+  "photos": [
+   {
+    "f": "g/c20/niagara-boat-selfie.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: a soaked selfie on the boat below the falls",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/mosque-portrait.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Daisy 200 Zoom: a woman in a headscarf in a white mosque court",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/shaggy-dog.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Daisy 200 Zoom: a shaggy golden dog at a café",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/incline-car.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: friends boarding a red-and-yellow incline car",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/cafe-square-beers.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: two friends with beers on a town square",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/snow-selfie-park.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: a snowy selfie by a fountain in the park",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/castle-path-portrait.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: a man on the path to a ruined castle",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/beach-dog-stick.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: a dog running with a stick on the beach",
+    "stock": "digital"
+   },
+   {
+    "f": "g/c20/san-antonio-letters.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Daisy 200 Zoom: big painted letters and skeleton figures",
+    "stock": "digital"
+   }
+  ]
+ },
+ "swivel990": {
+  "name": "Twister 330",
+  "stock": "digital",
+  "photos": [
+   {
+    "f": "g/swivel990/niagara-couple.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a couple at the rail above Niagara Falls",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/lake-hikers-dog.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: two hikers and a dog above a lake",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/highline-snow.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a woman on a snowy elevated park",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/canyon-selfie.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a selfie with a film camera at a canyon at sunrise",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/rooftop-deck.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a rooftop deck being built, a man resting on a bench",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/rapeseed-friends.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: two friends in a field of yellow rapeseed",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/mosque-colonnade.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a colonnade with gold capitals",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/kookaburra.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Twister 330: a kookaburra on a balcony rail",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/bulldog-hillside.jpg",
+    "w": 640,
+    "h": 480,
+    "alt": "Twister 330: a French bulldog looking over the fields",
+    "stock": "digital"
+   },
+   {
+    "f": "g/swivel990/salt-lake-wing.jpg",
+    "w": 480,
+    "h": 640,
+    "alt": "Twister 330: a plane's wing over a salt lake and mountains",
+    "stock": "digital"
+   }
+  ]
+ }
+}

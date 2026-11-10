@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Phold</title>
+<meta name="description" content="Help with Phold: your rolls, the envelope, purchases, prints, refunds and contact.">
+<meta name="theme-color" content="#261a12">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=20261108">
+<link rel="canonical" href="https://phold.photo/support.html">
+<meta property="og:title" content="Support · Phold">
+<meta property="og:image" content="https://phold.photo/img/og.jpg">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Phold, home"><img class="brand-icon" src="icon-64.png" width="32" height="32" alt=""> PHOLD</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc">
+<div class="wrap">
+  <p class="edge">Support</p>
+  <h1>Help with Phold</h1>
+  <p class="lede">Something not right with a roll, or just a question? Write to <a href="mailto:hello@phold.photo">hello@phold.photo</a>. There's one person behind Phold, and he reads everything.</p>
+  <div class="box">
+    <p><strong>For a print order, please include the roll number.</strong> It's on the envelope in the app and on the card in your prints (for example "No. 3F9C2"). If you don't have it, the delivery address or the email from your receipt helps us find it.</p>
+  </div>
+
+  <form class="contact" id="contact" action="https://odsmrnirfzqcsgtzczny.supabase.co/functions/v1/shop/contact" method="post" novalidate>
+    <h2>Contact us</h2>
+    <label>About
+      <select name="topic">
+        <option value="question">A question</option>
+        <option value="bug">Something's wrong</option>
+        <option value="order">My prints or an order</option>
+        <option value="idea">An idea</option>
+      </select>
+    </label>
+    <label>Email <input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+    <div class="row">
+      <label>Name <span>(optional)</span> <input type="text" name="name" autocomplete="name" maxlength="100"></label>
+      <label>Phone <span>(optional)</span> <input type="tel" name="phone" autocomplete="tel" maxlength="30"></label>
+    </div>
+    <label>Message <textarea name="message" rows="6" required maxlength="4000" placeholder="For a bug: what happened, what you were doing, and your iPhone model."></textarea></label>
+    <!-- For bots only: people never see it. -->
+    <label class="trap" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <p class="note" role="status" aria-live="polite"></p>
+    <div class="pills"><button class="pill lit" type="submit">Send</button><a class="pill mail" href="mailto:hello@phold.photo?subject=Phold%20help">or email hello@phold.photo</a></div>
+    <p class="small">What you send is kept to answer you, as the <a href="privacy.html">privacy policy</a> says.</p>
+  </form>
+
+  <h2>Your rolls</h2>
+  <div class="faq">
+    <details><summary>Where's my envelope?</summary><div><p>In the shop, on the lab's page. You'll get a notification when a roll's back, a day after it went in.</p></div></details>
+    <details><summary>Can I see my pictures sooner?</summary><div><p>Tap <strong>Can't wait? Develop now</strong> on the lab's page ($1.99 for that roll), or buy Unlock all and every roll comes back at once.</p></div></details>
+    <details><summary>How do I keep my pictures?</summary><div><p>Open the envelope, star the best and tap <strong>Save to phone</strong>, or <strong>Post</strong> to share them. Your rolls stay in the lab to open again.</p></div></details>
+    <details><summary>What's the @phold.app mark?</summary><div><p>Pictures from free rolls carry it, in each camera's own style. Unlock all takes it off, and prints never have it.</p></div></details>
+    <details><summary>What do the digital cameras do?</summary><div><p>They need no film. Shoot, then copy the pictures to your phone on the late-90s laptop.</p></div></details>
+    <details><summary>Which iPhones does Phold work on?</summary><div><p>It's built for iPhone Duo, where folding the phone works the camera, and works on every iPhone and iPad with iOS 26 or later.</p></div></details>
+    <details><summary>How do I see the tutorial again?</summary><div><p>Open the About card and tap <strong>How Phold works</strong>.</p></div></details>
+  </div>
+
+  <h2>Purchases</h2>
+  <div class="faq">
+    <details><summary>What can I buy in the app?</summary><div><p>The Phold-75, Reflex Twin and Plastique 120 at $1.99 each (each has one free shot first), Unlock all at $4.99 (every camera, no mark, pictures back at once) and Develop now at $1.99 a roll. The App Store shows the price in your currency.</p></div></details>
+    <details><summary>I got a new phone. How do I get my cameras back?</summary><div><p>Tap the person button at the top right, then <strong>Restore purchases</strong>, signed in with the same Apple Account you bought them with.</p></div></details>
+    <details><summary>Can I get a refund for an in-app purchase?</summary><div><p>Apple handles those. Ask at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></div></details>
+  </div>
+
+  <h2>Prints</h2>
+  <div class="faq">
+    <details><summary>How do I order prints?</summary><div><p>Tap <strong>Prints posted too</strong> on a film's card when you load it (10% off), or pick prints from a roll after. You pay with Apple Pay.</p></div></details>
+    <details><summary>When will my prints arrive?</summary><div><p>Usually one to two weeks after the roll goes to the lab. Farther away takes longer.</p></div></details>
+    <details><summary>How do I see where my prints have got to?</summary><div><p>Tap <strong>Your prints</strong> in the shop. Each envelope has a stamp: Received, At the lab, Posted. When the lab gives tracking, Track opens it.</p></div></details>
+    <details><summary>Which countries do you post to?</summary><div><p>More than 100. The UK, US, EU, Canada and Australia each have a shop in their own currency; elsewhere pays in US dollars, and local import tax may be due on delivery. The app only offers prints where we can post them.</p></div></details>
+    <details><summary>My prints haven't come.</summary><div><p>If it's been three weeks, <a href="mailto:hello@phold.photo">write to us</a> with the roll number. If they're lost, we'll print them again or refund you.</p></div></details>
+    <details><summary>My prints arrived damaged.</summary><div><p>Sorry. Send us a photo and the roll number within 30 days and we'll print them again or refund you. (Light leaks, soft focus and odd colours are the camera's doing. That's the fun of it.)</p></div></details>
+    <details><summary>Can I change the delivery address?</summary><div><p>Prints go to the address you chose in Apple Pay. Once the roll has gone to the lab, it can't be changed.</p></div></details>
+    <details><summary>Can I get a refund for prints?</summary><div><p>Prints you haven't sent to the lab yet, within 14 days. Once they're made from your pictures, only if they're damaged, misprinted or lost. See the <a href="terms.html">terms</a>.</p></div></details>
+    <details><summary>Do you store my card details?</summary><div><p>No. Apple Pay and Stripe handle the payment, and we never see your card number. More in the <a href="privacy.html">privacy policy</a>.</p></div></details>
+  </div>
+
+  <h2>Bugs and ideas</h2>
+  <p>Use Contact us in the app (the person button, then Contact us), or write to <a href="mailto:hello@phold.photo">hello@phold.photo</a>.</p>
+</div>
+</main>
+<script src="contact.js?v=20261101" defer></script>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><p>Phold is made by One Man Band Media DC LLC.</p></div>
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:hello@phold.photo">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
